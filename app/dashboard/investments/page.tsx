@@ -416,7 +416,7 @@ export default function InvestmentsPage() {
                     </TableCell>
                     <TableCell className="text-right">
                       <span className={(investment.roi || 0) >= 0 ? 'text-green-600' : 'text-red-600'}>
-                        {(investment.roi || 0).toFixed(2)}%
+                        {parseFloat(String(investment.roi || 0)).toFixed(2)}%
                       </span>
                     </TableCell>
                     <TableCell className="text-right">
